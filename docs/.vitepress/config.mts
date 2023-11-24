@@ -11,7 +11,9 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '悟道领域驱动设计', link: 'https://ddd.feiniaojin.com' }
     ],
-
+    footer: {
+      copyright: "京ICP备17012814号-1 Copyright © 2020-present Qin Yujie",
+    },
     sidebar: [
       {
         text: '关于文档中心',
