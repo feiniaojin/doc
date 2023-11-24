@@ -34,7 +34,21 @@ export default defineConfig({
           { text: '通用工具类', link: '/graceful-response/6.md' },
           { text: '自定义Response格式', link: '/graceful-response/7.md' },
           { text: '常用配置', link: '/graceful-response/8.md' },
-          { text: '开发者', link: '/graceful-response/9.md' }
+          { text: '开发者交流', link: '/graceful-response/9.md' }
+        ]
+      },
+      {
+        text: '责任链框架-Pie',
+        collapsed: false,
+        items: [
+          { text: '快速入门', link: '/pie/0.md' }
+        ]
+      },
+      {
+        text: 'DDD脚手架',
+        collapsed: false,
+        items: [
+          { text: '快速入门', link: '/ddd-archetype/0.md' }
         ]
       }
     ],

@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "文档中心"
   text: "开源项目文档"
-  tagline: My great project tagline
+  tagline: 脚踏实地是最快的捷径
   actions:
     - theme: brand
       text: 开始阅读
