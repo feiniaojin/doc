@@ -20,7 +20,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '文档中心说明', link: '/readme/0.md' },
-          { text: '开源维护者介绍', link: '/readme/1.md' }
+          { text: '开发者交流', link: '/readme/1.md' }
         ]
       },
       {
