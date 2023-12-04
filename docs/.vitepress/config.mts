@@ -36,6 +36,7 @@ export default defineConfig({
           { text: '通用工具类', link: '/graceful-response/6.md' },
           { text: '自定义Response格式', link: '/graceful-response/7.md' },
           { text: '常用配置', link: '/graceful-response/8.md' },
+          { text: '接口开发规范', link: '/graceful-response/10.md' },
           { text: '开发者交流', link: '/graceful-response/9.md' }
         ]
       },
