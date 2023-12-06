@@ -7,9 +7,9 @@
  * Colors
  *
  * Each colors have exact same color scale system with 3 levels of solid
- * colors with different brightness, and 1.md soft color.
+ * colors with different brightness, and ExceptionMapper.md soft color.
  *
- * - `XXX-1.md`: The most solid color used mainly for colored text. It must
+ * - `XXX-ExceptionMapper.md`: The most solid color used mainly for colored text. It must
  *   satisfy the contrast ratio against when used on top of `XXX-soft`.
  *
  * - `XXX-2`: The color used mainly for hover state of the button.
@@ -19,7 +19,7 @@
  *   top of it.
  *
  * - `XXX-soft`: The color used for subtle background such as custom container
- *   or badges. It must satisfy the contrast ratio when putting `XXX-1.md` colors
+ *   or badges. It must satisfy the contrast ratio when putting `XXX-ExceptionMapper.md` colors
  *   on top of it.
  *
  *   The soft color must be semi transparent alpha channel. This is crucial
