@@ -68,7 +68,7 @@ public static void isTrue(boolean expression,String message){
 }
 ```
 
-而`origin-exception-using-detail-message`被设置false的情况下，我们可以使用`GracefulResponse.warpAssert()`完成对断言的增强。
+而`origin-exception-using-detail-message`被设置false的情况下，我们可以使用`GracefulResponse.wrapAssert()`完成对断言的增强。
 
 - 不需要指定错误码
 
@@ -76,7 +76,7 @@ public static void isTrue(boolean expression,String message){
 @RequestMapping("/assert1")
 @ResponseBody
 public void assert1(Integer id){
-    GracefulResponse.warpAssert(()->Assert.isTrue(id==1,"id不等于1"));
+    GracefulResponse.wrapAssert(()->Assert.isTrue(id==1,"id不等于1"));
 }
 ```
 
@@ -88,7 +88,7 @@ public void assert1(Integer id){
 @RequestMapping("/assert2")
 @ResponseBody
 public void assert2(Integer id){
-    GracefulResponse.warpAssert("1001",()->Assert.isTrue(id==1,"id不等于1"));
+    GracefulResponse.wrapAssert("1001",()->Assert.isTrue(id==1,"id不等于1"));
 }
 ```
 
