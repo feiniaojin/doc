@@ -19,8 +19,8 @@ export default defineConfig({
                 text: '关于文档中心',
                 collapsed: false,
                 items: [
-                    {text: '文档中心说明', link: '/readme/QuickStart.md'},
-                    {text: '开发者交流', link: '/readme/ExceptionMapper.md'}
+                    {text: '文档中心说明', link: '/readme/0.md'},
+                    {text: '开发者交流', link: '/readme/1.md'}
                 ]
             },
             {
