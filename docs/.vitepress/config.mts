@@ -39,6 +39,7 @@ export default defineConfig({
                     {text: '常用配置', link: '/graceful-response/Config.md'},
                     {text: '第三方组件适配', link: '/graceful-response/4.md'},
                     {text: '接口开发规范', link: '/graceful-response/DevelopGuideline.md'},
+                    {text: 'Q&A', link: '/graceful-response/qa.md'},
                     {text: '开发者交流', link: '/graceful-response/9.md'}
                 ]
             },
