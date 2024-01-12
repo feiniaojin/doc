@@ -47,14 +47,14 @@ export default defineConfig({
                 text: '责任链框架-Pie',
                 collapsed: false,
                 items: [
-                    {text: '快速入门', link: '/pie/QuickStart.md'}
+                    {text: '快速入门', link: '/pie/0.md'}
                 ]
             },
             {
                 text: 'DDD脚手架',
                 collapsed: false,
                 items: [
-                    {text: '快速入门', link: '/ddd-archetype/QuickStart.md'}
+                    {text: '快速入门', link: '/ddd-archetype/0.md'}
                 ]
             }
         ],
