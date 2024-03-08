@@ -11,6 +11,6 @@
   "author": "feiniaojin",
   "license": "ISC",
   "devDependencies": {
-    "vitepress": "^1.0.0-rc.30"
+    "vitepress": "^1.0.0-rc.45"
   }
 }
