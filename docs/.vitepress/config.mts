@@ -27,6 +27,7 @@ export default defineConfig({
                 text: 'GracefulResponse',
                 collapsed: false,
                 items: [
+                    {text: '项目主页', link: '/graceful-response/home.md'},
                     {text: '版本变更记录', link: '/graceful-response/changelog.md'},
                     {text: '快速入门', link: '/graceful-response/QuickStart.md'},
                     {text: '自定义异常和错误码', link: '/graceful-response/ExceptionMapper.md'},
@@ -39,8 +40,7 @@ export default defineConfig({
                     {text: '常用配置', link: '/graceful-response/Config.md'},
                     {text: '第三方组件适配', link: '/graceful-response/4.md'},
                     {text: '接口开发规范', link: '/graceful-response/DevelopGuideline.md'},
-                    {text: 'Q&A', link: '/graceful-response/qa.md'},
-                    {text: '开发者交流', link: '/graceful-response/9.md'}
+                    {text: 'Q&A', link: '/graceful-response/qa.md'}
                 ]
             },
             {
