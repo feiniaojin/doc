@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "文档中心"
+  name: "文档中心!!!"
   text: "开源项目文档"
   tagline: 脚踏实地是最快的捷径
   actions:
