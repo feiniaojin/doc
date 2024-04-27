@@ -52,3 +52,17 @@ graceful-response:
 ```
 https://github.com/feiniaojin/graceful-response-example/blob/3.2.0-boot2/src/main/java/com/feiniaojin/gracefuresponse/example/controller/exclude/ExcludeController.java
 ```
+## 3. 根据路径进行放行
+
+用户可以通过配置`graceful-response.exclude-urls`，声明某些路径需要跳过不进行处理。
+
+例如，对于 /a/b/c，假如要把路径中有/b/的请求进行放行，则可以配置为`/**/b/**`
+
+## 4. 根据返回值类型进行放行
+
+用户可以通过配置`graceful-response.exclude-return-types`，声明某些返回值类型需要跳过不进行处理。
+
+```yaml
+graceful-response:
+  exclude-return-types: com.feiniaojin.gracefuresponse.example.dto.UserInfoView
+```

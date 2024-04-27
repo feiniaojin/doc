@@ -27,3 +27,10 @@ public class Service {
     }
 }
 ```
+
+部分用户希望抛异常时也返回数据，可以采用以下方法：
+
+```java
+GracefulResponse.wrapAssert("code",data,() -> Assert.isTrue(id == 1, "id不等于1"));
+```
+其中，code是要返回的错误码，data是要返回的数据，`() -> Assert.isTrue(id == 1, "id不等于1")`是抛异常的断言，注意书写格式。

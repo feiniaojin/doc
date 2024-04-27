@@ -38,6 +38,7 @@ export default defineConfig({
                     {text: '自定义Response格式', link: '/graceful-response/CustomResponse.md'},
                     {text: '异常别名', link: '/graceful-response/ExceptionAliasFor.md'},
                     {text: '常用配置', link: '/graceful-response/Config.md'},
+                    {text: '国际化', link: '/graceful-response/i18n.md'},
                     {text: '第三方组件适配', link: '/graceful-response/4.md'},
                     {text: '接口开发规范', link: '/graceful-response/DevelopGuideline.md'},
                     {text: 'Q&A', link: '/graceful-response/qa.md'}
