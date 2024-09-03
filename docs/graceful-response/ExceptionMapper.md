@@ -58,20 +58,16 @@ public class Controller {
 
 ```json
 {
-  "status": {
-    "code": 1007,
-    "msg": "有内鬼，终止交易"
-  },
-  "payload": {
+  "code": 1007,
+  "msg": "有内鬼，终止交易",
+  "data": {
   }
 }
 ```
 
 ## 3. 异常信息替换
 
-创建自定义异常，采用 `@ExceptionMapper`注解修饰，注解的 `code`属性为返回码，`msg`属性为错误提示信息，`msgReplaceable`设置为true
-
-并且，重新其构造方法，提供包含message的入参。
+创建自定义异常，采用 `@ExceptionMapper`注解修饰，注解的 `code`属性为返回码，`msg`属性为错误提示信息，`msgReplaceable`设置为true。
 
 ```java
 @ExceptionMapper(code = "1007", msg = "有内鬼，终止交易", msgReplaceable = true)
@@ -116,11 +112,9 @@ public class Service {
 
 ```json
 {
-  "status": {
-    "code": 1007,
-    "msg": "创建异常时自定义了异常信息"
-  },
-  "payload": {
+  "code": 1007,
+  "msg": "创建异常时自定义了异常信息",
+  "data": {
   }
 }
 ```

@@ -4,7 +4,7 @@
 
 异常别名主要针对外部异常的自定义错误码和错误提示。
 
-以SpringBoot框架产生的`org.springframework.web.servlet.NoHandlerFoundException`异常(实际是Spring Webmvc中的异常)为例，当我们访问了不存在的路径时，Spring WebMVC框架会抛出该异常。此时，如果不使用异常别名，可能存在两种处理方案：
+以SpringBoot框架产生的`org.springframework.web.servlet.NoHandlerFoundException`异常(实际是Spring Webmvc中的异常)为例，当用户访问了不存在的路径时，Spring WebMVC框架会抛出该异常。此时，如果不使用异常别名，可能存在两种处理方案：
 
 - 没开启GracefulResponse
 
@@ -38,7 +38,7 @@ graceful-response:
   "data": {}
 }
 ```
-假如我们开启了异常信息填充，如以下配置
+假如开启了异常信息填充，如以下配置
 ```yaml
 spring:
   mvc:
@@ -51,7 +51,7 @@ graceful-response:
   response-style: 1
   origin-exception-using-detail-message: true
 ```
-我们将得到：
+将得到：
 ```json
 {
   "code": "1",
@@ -67,7 +67,7 @@ graceful-response:
 
 这种外部异常定制错误码和错误信息的场景，我们可以使用`异常别名`来支持。
 
-通过异常别名，我们将返回HTTP状态码为200，且对用户友好的Response，如以下结果。
+通过异常别名，可以返回对用户友好的Response，如以下结果。
 
 ```json
 {
@@ -93,13 +93,15 @@ https://github.com/feiniaojin/graceful-response-example.git
 public class NotFoundException extends RuntimeException {
 }
 ```
-@ExceptionAliasFor包括三个属性：code、msg、aliasFor。
+@ExceptionAliasFor包括属性：code、msg、aliasFor、httpStatusCode。
 
 code:捕获异常时返回的错误码
 
 msg:为提示信息
 
 aliasFor:表示将成为哪个异常的别名，通过这个属性关联到对应异常。
+
+httpStatusCode：指定该外部异常返回的HTTP状态码，该值默认为-1，代表不修改HTTP状态码。
 
 ### 2.2 注册异常别名
 
@@ -135,3 +137,17 @@ http://localhost:9090/example/get2?id=1
   }
 }
 ```
+
+## 3. 采用配置文件进行异常别名配置
+
+从5.0.0版本开始，提供配置文件方式的异常别名配置，大大减少了配置负担。
+
+```yaml
+graceful-response:
+  exception-alias-config-map:
+    "[com.feiniaojin.gracefuresponse.example.exceptions.outer.OuterException]":
+        code: 5200
+        httpStatusCode: 401
+```
+
+>httpStatusCode即该异常别名对应的HTTP状态码，不配置时默认为-1，代表不修改HTTP状态码

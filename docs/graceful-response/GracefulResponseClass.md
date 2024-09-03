@@ -24,7 +24,7 @@ public class Service {
         if (condition) {
             GracefulResponse.raiseException("自定义的错误码", "自定义的错误信息");
         }
-    }
+    }             
 }
 ```
 

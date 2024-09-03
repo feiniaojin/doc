@@ -6,6 +6,24 @@
 - z代表bug修复的版本
 - platform代表平台版本，目前只有boot2和boot3
 
+## 5.0.0
+SpringBoot 3.x
+```xml
+<dependency>
+    <groupId>com.feiniaojin</groupId>
+    <artifactId>graceful-response</artifactId>
+    <version>5.0.0-boot3</version>
+</dependency>
+```
+SpringBoot 2.x
+```xml
+<dependency>
+    <groupId>com.feiniaojin</groupId>
+    <artifactId>graceful-response</artifactId>
+    <version>5.0.0-boot2</version>
+</dependency>
+```
+
 ## 4.0.1
 SpringBoot 3.x
 ```xml

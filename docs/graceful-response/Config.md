@@ -7,8 +7,8 @@ graceful-response:
   response-class-full-name:
   # 是否打印异常日志，默认为false
   print-exception-in-global-advice: false
-  # Response风格，不配置默认为0
-  response-style: 0
+  # Response风格，不配置默认为1
+  response-style: 1
   # 自定义的成功响应码，不配置则为0
   default-success-code: 0
   # 自定义的成功提示，默认为ok
