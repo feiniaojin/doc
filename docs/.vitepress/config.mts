@@ -16,11 +16,12 @@ export default defineConfig({
         },
         sidebar: [
             {
-                text: '关于文档中心',
+                text: '关于',
                 collapsed: false,
                 items: [
                     {text: '文档中心说明', link: '/readme/0.md'},
-                    {text: '开发者交流', link: '/readme/1.md'}
+                    {text: '开发者交流', link: '/readme/1.md'},
+                    {text: '新书推荐', link: '/readme/book.md'}
                 ]
             },
             {

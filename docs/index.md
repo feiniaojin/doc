@@ -6,13 +6,15 @@ hero:
   name: "文档中心"
   text: "开源项目文档"
   tagline: 脚踏实地是最快的捷径
+  image:
+    src: /book.png
   actions:
     - theme: brand
       text: 开始阅读
       link: /readme/0.md
     - theme: alt
-      text: 《悟道领域驱动设计》电子书
-      link: https://ddd.feiniaojin.com
+      text: 购买《悟道领域驱动设计》实体书
+      link: https://item.jd.com/14835288.html
 
 features:
   - title: Graceful Response
